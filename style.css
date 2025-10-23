@@ -9,6 +9,9 @@
     
     text-align: center;
     margin-top: 40px;
+
+    padding-top: 40px;
+    
 }
 
 
@@ -19,8 +22,14 @@ input{
     height: 30px;
 }
 
-h1{
+.extra{
     position: relative;
-    left: 750px;
+    left: 690px;
+    width: 32%;
+}
+
+.valores{
+    position: relative;
+    left: 600px;
     width: 32%;
 }
