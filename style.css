@@ -1,3 +1,18 @@
+.saldo{
+    position: relative;
+    left: 80%;
+    width: 14%;
+    color: black;
+}
+
+.saldo p{
+    position: relative;
+    left: 30%;
+    width: 14%;
+    color: black;
+}
+
+
 #inp{
     background-color: #0077b6;
     width: 100%;
@@ -32,4 +47,15 @@ input{
     position: relative;
     left: 600px;
     width: 32%;
+}
+
+button{
+    width:20%;
+    background-color: black;
+    margin-top: px;
+    position: relative;
+    left: 600px;
+    color: white;
+    height: 50px;
+    cursor: pointer;
 }
