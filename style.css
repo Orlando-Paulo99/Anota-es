@@ -1,23 +1,42 @@
+body{
+    background-color:#1E3A8A;
+}
 .saldo{
     position: relative;
     left: 80%;
     width: 14%;
-    color: black;
+    color: #e9ecef;
+    
 }
 
 .saldo p{
     position: relative;
-    left: 30%;
+    left: 8%;
     width: 14%;
-    color: black;
+    color: #e9ecef;
+}
+
+.ação{
+    position: relative;
+    width: 30%;
+    left: 10%;
+    color: #e9ecef;
+    margin-top: -7%;
+
+}   
+.ação select{
+    position: relative;
+    left: 40px;
 }
 
 
+
 #inp{
-    background-color: #0077b6;
+    background-color: #3B82F6;
     width: 100%;
     height: 500px;
     color: aliceblue;
+    /** gera uma barra de rolagem dentro da DIV */
     overflow-y:auto ;
     justify-content:space-evenly;
     position: relative;
@@ -41,17 +60,19 @@ input{
     position: relative;
     left: 690px;
     width: 32%;
+    color: #e9ecef;
 }
 
 .valores{
     position: relative;
     left: 600px;
     width: 32%;
+    color: #e9ecef;
 }
 
 button{
     width:20%;
-    background-color: black;
+    background-color: #2563EB;
     margin-top: px;
     position: relative;
     left: 600px;
@@ -64,7 +85,7 @@ button{
 @media screen and (max-width: 480px) {
 
     body{
-        background-color: aliceblue;
+        background-color: ;
     }
 
     .saldo{
@@ -82,7 +103,7 @@ button{
 
     .extra{
         position: relative;
-        left: 39%;
+        left: 34%;
         align-items: center;
         justify-content: center;
         margin-top: 30px;
@@ -91,14 +112,15 @@ button{
 
     .valores{
         position: relative;
-        left: 40%;
+        left: 29%;
         align-items: center;
         justify-content: center;
         font-size:19px;
+        width: 50%;
     }
 
     input{
-         left: 30%;
+         left: 25%;
         align-items: center;
         justify-content: center;
         width: 50%;
@@ -106,10 +128,11 @@ button{
     }
 
     button{
-        width: 40%;
+        width: 29%;
         left: 37%;
         align-items: center;
         justify-content: center;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         
     }
 
