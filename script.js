@@ -128,6 +128,5 @@ async function atualizarValor() {
        default:
         alert('Selecione a opção');
         break;
-
-    }    
+    }  
 }
