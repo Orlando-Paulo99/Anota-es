@@ -9,18 +9,31 @@
 <body>
 
     <div class="saldo" id=""> 
-        <h1 class="tots" >Valor Total</h1> 
+        <h1 class="tots" >Saldo</h1> 
         <p id="vTotal"></p>
     </div>
 
+    <div class="ação">
+        <h1>Selecionar Ação</h1>
+        <select name="" id="sele" onchange="atualizarValor()">
+            <option value="">-------------------</option>
+            <option value="atualizar">Editar</option>
+            <option value=""></option>
+        </select>
+    </div>
 
+    <div id="vazio">
+
+    </div>
 
     <h1 class="extra">Extrato</h1>
 
     <h1 class="valores">Valor Feito no dia</h1>
     <input type="text" id="inserir">
     <br><br>
-    <h1 class="valores">Valor Total do caixa</h1>
+
+    <!---->
+    <h1 class="valores">Valor Total em caixa</h1>
     <input type="number" id="total"> 
     
     <br><br><br>
