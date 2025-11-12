@@ -97,3 +97,37 @@ async function saldo_total() {
         
 }
 saldo_total();
+
+let valorSelect=document.getElementById("sele")
+let dVazia=document.getElementById("vazio")
+
+async function atualizarValor() {
+    dVazia.innerHTML="";
+
+    switch(valorSelect.value){
+
+        case "atualizar":{
+
+        const chavePrim=document.createElement('input');
+        chavePrim.type="number";
+        chavePrim.id="chave";
+        chavePrim.placeholder="Digite o Id Desejado"
+
+
+        const valorNew=document.createElement('input');
+        valorNew.type="number";
+        valorNew.id="valorNovo";
+        valorNew.placeholder="Digite o Nome valor que Deseja";
+
+    
+        dVazia.appendChild(chavePrim);
+        dVazia.appendChild(valorNew)
+        break;
+       }
+
+       default:
+        alert('Selecione a opção');
+        break;
+
+    }    
+}
