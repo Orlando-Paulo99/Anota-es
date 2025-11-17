@@ -16,12 +16,12 @@ b.addEventListener("click" , async () =>{
 
         //convertendo os valores digitas de Strings para numeros flutuantes
         const valorDoDia=parseFloat(receber.value);
-        const valorTotal=parseFloat(total.value);
+         //const valorTotal=parseFloat(total.value);
 
         //e.preventDefault(); //“Ei navegador, não faça sua ação padrão, eu vou cuidar disso!”  
         
         //informar valores corretor(no caso seria números)
-        if (isNaN(valorDoDia) || isNaN(valorTotal)){
+        if (isNaN(valorDoDia)) {//|| isNaN(valorTotal)){
             alert("inserir valores validos");
             return;
         }
@@ -32,7 +32,7 @@ b.addEventListener("click" , async () =>{
         .from('anota')
         //inserindo o valores nas tabelas do banco
         .insert([
-            {value_inserted: valorDoDia , total_in_box:valorTotal}
+            {value_inserted: valorDoDia }//, total_in_box:valorTotal}
         ]);
 
         //informa se consta algum erro
@@ -43,12 +43,12 @@ b.addEventListener("click" , async () =>{
         }
 
         //Nesse codigo insere o valor o input e é adicionado abaixo dos que já estão
-        info.innerHTML += "Valor Inserido: " +valorDoDia + "<br>"+ "Valor Total em Caixa: " + valorTotal + "<br>" + new Date().toLocaleDateString() +"<br><br>";
+        //info.innerHTML += "Valor Inserido: " +valorDoDia ; //"<br>"+ "Valor Total em Caixa: " ;//+ valorTotal + "<br>" + new Date().toLocaleDateString() +"<br><br>";
         
         
-        //Nesse codigo informa que apos é adicionado o campo do input fica vazio
+        //Nesse codigo informa que apos ser adicionado o campo do input fica vazio
         receber.value=""
-        total.value=""
+        //total.value=""
 
 });
 
@@ -68,7 +68,7 @@ async function listarDados(){
     
     //O forEach serve pra percorrer toodos os dados da tabela ou da coluna
     data.forEach(element => {
-        info.innerHTML+= "Valor inserido no dia: "+element.value_inserted + "<br>" +"Valor total do dia: " +element.total_in_box +"<br><br>";
+        info.innerHTML+= "Valor inserido :"+ +element.value_inserted + "<br><br>"; //+ "<br>" +"Valor total do dia: " +element.total_in_box +"<br><br>";
         
     });
 
@@ -93,11 +93,15 @@ async function saldo_total() {
     });
 
     saldo.innerHTML=sum
-        console.log(sum);
+    console.log(sum);
         
 }
 saldo_total();
 
+
+/***
+ * 
+ 
 let valorSelect=document.getElementById("sele")
 let dVazia=document.getElementById("vazio")
 
@@ -130,3 +134,6 @@ async function atualizarValor() {
         break;
     }  
 }
+
+
+ */
