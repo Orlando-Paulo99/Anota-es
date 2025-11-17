@@ -52,13 +52,13 @@ body{
 }
 
 
-input{
+input {
     position: relative;
     left: 500px;
     width: 32%;
     height: 30px;
     background-color: bisque;
-    
+
 }
 
 .extra{
