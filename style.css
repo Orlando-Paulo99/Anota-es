@@ -146,7 +146,7 @@ button{
     .saldo{
         width: 20%;
         position: relative;
-        left: 28%;
+        left: 35%;
         margin-top: 30px;
         display:flex;
     }
@@ -183,7 +183,7 @@ button{
 
      .extra{
         position: relative;
-        left: 29%;
+        left: 35%;
         align-items: center;
         margin-top: 30px;
 
@@ -191,7 +191,7 @@ button{
 
     .valores{
         position: relative;
-        left: 26%;
+        left: 28%;
         align-items: center;
         justify-content: center;
         font-size:19px;
