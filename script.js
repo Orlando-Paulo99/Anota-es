@@ -32,7 +32,7 @@ b.addEventListener("click" , async () =>{
         .from('anota')
         //inserindo o valores nas tabelas do banco
         .insert([
-            {value_inserted: valorDoDia }//, total_in_box:valorTotal}
+            {valor_inserido: valorDoDia }//, total_in_box:valorTotal}
         ]);
 
         //informa se consta algum erro
@@ -68,7 +68,7 @@ async function listarDados(){
     
     //O forEach serve pra percorrer toodos os dados da tabela ou da coluna
     data.forEach(element => {
-        info.innerHTML+= "Valor inserido :"+ +element.value_inserted + "<br><br>"; //+ "<br>" +"Valor total do dia: " +element.total_in_box +"<br><br>";
+        info.innerHTML+= "Valor inserido :"+ +element.valor_inserido + "<br><br>"; //+ "<br>" +"Valor total do dia: " +element.total_in_box +"<br><br>";
         
     });
 
@@ -80,7 +80,7 @@ listarDados();
 async function saldo_total() {
     const {data,error} = await supabase
     .from('anota')
-    .select("value_inserted")
+    .select("valor_inserido")
 
     if(error){
         console.log(error)
@@ -89,7 +89,7 @@ async function saldo_total() {
     
     let sum =0;
     data.forEach(element=>{    
-        sum +=element.value_inserted;
+        sum +=element.valor_inserido;
     });
 
     saldo.innerHTML=sum
