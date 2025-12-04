@@ -49,6 +49,7 @@ b.addEventListener("click" , async () =>{
         //Nesse codigo informa que apos ser adicionado o campo do input fica vazio
         receber.value=""
         //total.value=""
+        location.reload()
 
 });
 
