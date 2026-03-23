@@ -31,7 +31,7 @@ b.addEventListener("click" , async () =>{
         }
 
         //inserindo dados na tabela
-        const {data, error} = await supabase
+        const {data, error} = await supabaseCliente
         //nome da tabela
         .from('anota')
         //inserindo o valores nas tabelas do banco
@@ -59,7 +59,7 @@ b.addEventListener("click" , async () =>{
 
 //Nessa função lista todos os dados na div 
 async function listarDados(){
-    const {data , error} = await supabase
+    const {data , error} = await supabaseCliente
     .from('anota')
     .select('*')
 
@@ -83,7 +83,7 @@ listarDados();
 
 //nessa função é feito a soma de todos os dados da coluna total_insert
 async function saldo_total() {
-    const {data,error} = await supabase
+    const {data,error} = await supabaseCliente
     .from('anota')
     .select("valor_inserido")
 
