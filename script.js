@@ -13,8 +13,7 @@ const supabaseCliente = window.supabase.createClient(
 );
 
 // forma correta v2
-const { createClient } = window.supabase;
-const supabase = createClient(supabaseUrl, supabaseKey);
+
 
 //evento de click quando o usuario digitar os valores e inserir
 b.addEventListener("click" , async () =>{
