@@ -57,7 +57,7 @@ b.addEventListener("click" , async () =>{
 async function listarDados(){
     const {data , error} = await supabase
     .from('anota')
-    .select('')
+    .select('*')
 
     if(error){
         alert("erro ao consultar tabela");
