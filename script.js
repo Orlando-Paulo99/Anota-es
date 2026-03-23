@@ -9,7 +9,7 @@ const saldo=document.getElementById("vTotal")
 //codigos supabase
 const supabaseUrl = 'https://ofxudymzwrgluaeppcnp.supabase.co';
 const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9meHVkeW16d3JnbHVhZXBwY25wIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjEzMzg4MTMsImV4cCI6MjA3NjkxNDgxM30.D8O_WBcrBrZfbj84cerqjwFGFeUwWXVeOaD9jHPSBR4';
-const supabase = window.supabase.createClin(supabaseUrl, supabaseKey);
+const supabase = window.supabase.createClient(supabaseUrl, supabaseKey);
 
 //evento de click quando o usuario digitar os valores e inserir
 b.addEventListener("click" , async () =>{
