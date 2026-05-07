@@ -46,7 +46,7 @@ body{
     
     text-align: center;
     margin-top: 40px;
-    position: relative;
+    
 
     
     
@@ -71,7 +71,7 @@ input {
 
 .valores{
     position: relative;
-    left: 38%;
+    left: 40%;
     width: 32%;
     color: #e9ecef;
 }
