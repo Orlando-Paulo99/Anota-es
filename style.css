@@ -63,7 +63,7 @@ input {
 
 .extra{
     position: relative;
-    left: 500px;
+    left: 50%;
     width: 32%;
     color: #e9ecef;
 }
